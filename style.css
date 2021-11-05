@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Feeling Lovely;
+    src: url(./fuentes/Feeling\ Lovely.ttf);
+}
+@font-face{
+    font-family: Birds of Paradise;
+    src: url(./fuentes/Birds\ of\ Paradise.ttf);
+}
+
+h1{
+    font-family: Feeling Lovely;
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 600%;
+    color: saddlebrown;
+}
+
+.subtitulo{
+    font-family: Birds of Paradise;
+    position: relative;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 260%;
+    color:rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(120, 145, 139, 0.268), rgba(90, 100, 20, 0.583)), url(./IMAGEN/fondo_inicio.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 9%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(180, 182, 35);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+

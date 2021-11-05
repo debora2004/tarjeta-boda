@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+.fondo{
+    background:rgb(209, 214, 214)
+}
+
+@font-face{
+    font-family: Feeling Lovely;
+    src: url(./fuentes/Feeling\ Lovely.ttf);
+}
+@font-face{
+    font-family: Birds of Paradise;
+    src: url(./fuentes/Birds\ of\ Paradise.ttf);
+}
+
+h1{
+    font-family: Feeling Lovely;
+   
+    text-align: center;
+    font-size: 600%;
+    color: saddlebrown;
+}
+
+
+
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    width: 9%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(48, 43, 43);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(180, 182, 35);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+#estilo-img{
+    border-radius: 15%;
+    width: 100%;
+   
+
+}
+
+.centro{
+    float: left;
+}
+
+.espacio{
+    vertical-align: middle;
+}
+ 
+.estilo-img-ret{
+    border-radius: 15%;
+}
+.relleno{
+    padding: 8.2%;
+}
+
+.relleno1{
+    padding: 2%;
+}
+
+#retrato-pa{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+p{
+    text-align: center;
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#ac9a16;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
