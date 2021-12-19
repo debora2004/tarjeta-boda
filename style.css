@@ -123,9 +123,9 @@ nav .logo img {
         transition: all 1s ease;
         background: #947b74;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #6a573c, #572d21);
+        background: -webkit-linear-gradient(to right, #947b74, #d08bc4);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #c59551, #9d7d14);
+        background: linear-gradient(to right, #947b74, #947b74);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }

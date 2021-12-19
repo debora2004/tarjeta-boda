@@ -1,12 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-   
-
-}
-
-.fondo{
-    background:rgb(209, 214, 214)
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face{
@@ -18,9 +14,68 @@
     src: url(./fuentes/Birds\ of\ Paradise.ttf);
 }
 
+main{
+    background-color: #e8e1c9;
+}
+
+header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header nav {
+    height: 70px;
+    background: #d8b677c6;
+    display: flex;
+    justify-content: space-between
+}
+.icono {
+    display: none;
+}
+
+.enlaces {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces a {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.enlaces a:hover,
+.active {
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
+}
+
+nav .logo {
+    height: 100%;
+   
+    margin-left: 80px;
+}
+
+nav .logo img {
+    object-fit: cover;
+    height: inherit;
+}
+
+
+
 h1{
     font-family: Feeling Lovely;
-   
     text-align: center;
     font-size: 600%;
     color: saddlebrown;
@@ -29,82 +84,10 @@ h1{
 
 
 
-.navbar {
-    width: 80%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.logo {
-    width: 9%;
-    cursor: pointer;
-}
-
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: rgb(48, 43, 43);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.navbar ul li::before {
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: rgb(180, 182, 35);
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    transition: 0.4s ease-out;
-}
-
-.navbar ul li:hover::before {
-    width: 100%;
-}
-
-#estilo-img{
-    border-radius: 15%;
-    width: 100%;
-   
-
-}
-
 .centro{
     float: left;
 }
 
-.espacio{
-    vertical-align: middle;
-}
- 
-.estilo-img-ret{
-    border-radius: 15%;
-}
-.relleno{
-    padding: 8.2%;
-}
-
-.relleno1{
-    padding: 2%;
-}
-
-#retrato-pa{
-    width: 100%;
-    padding-bottom: 5%;
-}
 
 p{
     text-align: center;
@@ -122,3 +105,102 @@ p{
 	right:20px;
 }
 
+/*responsive mobile*/
+
+@media screen and (max-width: 600px){
+  main{
+    overflow-x:hidden;
+
+  }
+    .icono {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: #fff;
+        background: transparent;
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    .enlaces {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #947b74;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #947b74, #d08bc4);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #947b74, #947b74);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .uno {
+
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+
+    }
+
+    .dos {
+
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+
+    }
+
+    /*Articulos*/
+
+    .mobile-version{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .mobile-version p{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      
+        line-height: 30px;
+        font-size: 120%;
+    }
+    #estilo-img{
+        max-width:100%;
+        width: 80%;
+     
+       flex-direction: column;
+       text-align: center;
+       border-radius: 15%;
+     
+    }
+
+    .mobile-version h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 300%;
+    }
+  
+    img{
+        max-width:100%;
+        width: 80%;
+     
+       flex-direction: column;
+       text-align: center;
+       border-radius: 15%;
+      }
+    
+      /*espacios*/
+      .space{
+          margin-top: 10%;
+      }
+}
