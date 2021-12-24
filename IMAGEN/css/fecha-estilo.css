@@ -22,9 +22,9 @@ main{
 }
 
 
-.textos {
-    font-family: Feeling Lovely;
-   font-size: 200%;
+.textos  {
+    font-family: 'Pacifico', cursive;
+       font-size: 200%;
     letter-spacing: 2px;   
     text-align: center;
     color: rgba(109, 8, 13, 0.844);

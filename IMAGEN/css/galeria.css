@@ -21,8 +21,8 @@ main{
 }
 
 .textos {
-    font-family: Feeling Lovely;
-   font-size: 200%;
+    font-family: 'Pacifico', cursive;
+       font-size: 200%;
     letter-spacing: 2px;   
     text-align: center;
     color: rgba(109, 8, 13, 0.844);
@@ -102,6 +102,9 @@ p{
 }
 
 
+
+
+
 .container-img{
     
     width: 100%;
@@ -141,7 +144,9 @@ p{
    
 }
 @media screen and (max-width:500px){
-   
+   .textos{
+    font-size: 250%;
+   }
     .container-img{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
