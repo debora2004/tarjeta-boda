@@ -21,7 +21,7 @@ header .textos h1{
     font-weight: 600;
    
     text-align: center;
-    color: rgba(109, 8, 13, 0.844);
+    color: rgba(182, 45, 51, 0.844);
 }
 
 header .textos h2{
@@ -29,7 +29,7 @@ header .textos h2{
     text-align: center;
     font-size: 360%;
     font-weight: 300;
-    color:rgb(109, 8, 13);
+    color:rgb(190, 62, 69);
 }
 
 .titulo{
@@ -40,7 +40,7 @@ header .textos h2{
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(120, 145, 139, 0.268), rgba(90, 100, 20, 0.583)), url(./IMAGEN/fondo_inicio.jpeg);
+    background-image: linear-gradient(rgba(120, 145, 139, 0.268), rgba(90, 100, 20, 0.583)), url(./IMAGEN/portada.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,6 +95,7 @@ nav .logo img {
 
 
 @media screen and (max-width:750px) {
+   
     /*h2{
         margin-top: 20%;
     }*/
@@ -113,7 +114,7 @@ nav .logo img {
     
     header .textos h1 {
         font-size: 75px;
-        margin-top: 10%;
+        margin-top: 50%;
     }
 
     .enlaces {
@@ -148,6 +149,7 @@ nav .logo img {
 }
 
 @media screen and (max-width:400px){
+   
     h2{
         margin-top: -50%;
     }

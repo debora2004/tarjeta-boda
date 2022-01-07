@@ -198,9 +198,26 @@ p{
        text-align: center;
        border-radius: 15%;
       }
+
+      .pad-p{
+         margin-top: -5%;
+      }
+
+      .img-pad{
+          width: 60%;
+      }
     
       /*espacios*/
       .space{
           margin-top: 10%;
+      }
+#pad{
+    font-size: 160%;
+}
+      #p{
+          font-size: 190%;
+      }
+      #us{
+          font-size: 200%;
       }
 }

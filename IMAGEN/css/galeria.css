@@ -132,6 +132,9 @@ p{
     grid-row-start: span 2;
 }
 @media screen and (max-width:800px){
+    #img-2{
+        margin-top: 30%;
+    }
     .container-img{
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
@@ -151,15 +154,35 @@ p{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #img-2{
+        margin-top: 30%;
+    }
     .container-img .box-img img{
-        height: 200px;
+        height: 300px;
     }
 }
 
 
-
+@media screen and (max-width: 360px){
+    #img-2{
+        margin-top: 80%;
+    }
+}
+@media screen and (max-width: 390px){
+    #img-2{
+        margin-top: 30%;
+    }
+}
 
 @media screen and (max-width: 600px){
+    #img-2{
+        margin-top: 30%;
+    }
+    #horizontal-img{
+        width: 100%;
+        height: 320px;
+    }
     .container{
       margin-top: -5%;
     }
